@@ -170,7 +170,7 @@ div {
 .grid__item {
     background-color: var(--primary-color);
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
-    border: solid var(--secondary-color);
+    border: solid lightgray;
     text-align: center;
     padding: 10px;
     border-radius: 2%;

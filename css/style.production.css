@@ -12,8 +12,18 @@
 
 body {
     background-color: #fff;
-    font-family: 'Gloock', serif; /*change to better font at later date*/
+    font-family: 'Open-Sans', serif; /*change to better font at later date*/
     /*rgb(11,201,134)*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 1.1;
 }
 h1 {
     font-size: 36px;
@@ -21,7 +31,7 @@ h1 {
     font-weight: 100;
 }
 p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1;
     font-style: normal; /*maybe change to italic*/
 }
@@ -36,6 +46,7 @@ a {
 }
 a:hover {
     text-decoration: none;
+    color: #003932;
 }
 a:visited {
     color: #05945F;
@@ -51,7 +62,7 @@ button {
     display: inline-block;
     background-color: lightskyblue;
     color: black;
-    font-size: 16px;
+    font-size: 18px;
     padding: 5px 15px;
     border-radius: 3px;
     font-family: inherit;
@@ -60,13 +71,18 @@ button {
     -webkit-transition: opacity 0.6s;
     -o-transition: opacity 0.6s;
     transition: opacity 0.6s;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    -o-transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 .button {
     border: none;
     display: inline-block;
     background-color: lightskyblue;
     color: black;
-    font-size: 16px;
+    font-size: 18px;
     padding: 5px 15px;
     border-radius: 3px;
     font-family: inherit;
@@ -75,13 +91,18 @@ button {
     -webkit-transition: opacity 0.6s;
     -o-transition: opacity 0.6s;
     transition: opacity 0.6s;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    -o-transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 .grid-button {
     border: none;
     display: inline-block;
     background-color: lightskyblue;
     color: black;
-    font-size: 16px;
+    font-size: 18px;
     padding: 5px 15px;
     border-radius: 3px;
     font-family: inherit;
@@ -90,6 +111,11 @@ button {
     -webkit-transition: opacity 0.6s;
     -o-transition: opacity 0.6s;
     transition: opacity 0.6s;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    -o-transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 button:hover {
     background-color: #003932;
@@ -115,6 +141,9 @@ button:focus, .button:active {
 button:hover, button:focus, .button:hover, .button:focus, .grid-button:hover, .grid-button:focus {
     cursor: pointer;
     opacity: .8;
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 }
 .grid-button {
     background-color: #003932;
@@ -129,7 +158,33 @@ div {
     height: auto;
     width: 250px;
     margin-right: 40px;
-    border-radius: 50%;
+    border-radius: 20%;
+}
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 300% 0%;
+    }
+}
+@keyframes shimmer {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 300% 0%;
+    }
+}
+.span-web {
+    background: -o-linear-gradient(45deg, #05945F, #003932, lightskyblue);
+    background: linear-gradient(45deg, #05945F, #003932, lightskyblue);
+    background-size: 300% 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-animation: shimmer 10s linear infinite;
+            animation: shimmer 10s linear infinite;
 }
 .page-footer {
     clear: both;
@@ -142,7 +197,12 @@ div {
             flex-direction: column;
     text-align: center;
     background-color: #05945F;
-    margin-top: 100px;
+    margin-top: 150px;
+}
+.social-media a :hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
 }
 .profile {
     max-width: 700px;
@@ -154,29 +214,37 @@ div {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    padding: 10px;
-    border-bottom: 1px solid #05945F;
+    padding: 16px 24px 16px 0px;
+    border-bottom: 1px solid lightgray;
+
 }
 .page-header__item {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 175px;
-            flex: 0 1 175px; /*changed from 200px to 175px for logo to fit better*/
+        -ms-flex: 0 1 50px;
+            flex: 0 1 50px; /*changed from 200px to 175px for logo to fit better*/
+    padding-left: 10px;
+
 } 
 .page-header__item:last-child {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
     text-align: right;
+    font-size: 20px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    
 }
-.navigation-list {
-    list-style-type: none;
+.navigation-list__item {
+    text-decoration: none;
+    padding: 8px;
 }
-.navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
+.navigation-list__item:hover {
+    color: lightskyblue;
 }
 .navigation-list__item--active {
-    text-decoration: none;
+    text-decoration: underline;
 }
 * {
     -webkit-box-sizing: border-box;
@@ -221,8 +289,9 @@ div {
 }
 .grid__item {
     background-color: #fff;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
-    border: solid #05945F;
+    -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    border: solid lightgray;
     text-align: center;
     padding: 10px;
     border-radius: 2%;
@@ -239,8 +308,9 @@ div {
 }
 .about-page {
     background-color: #fff;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
-    border: solid #05945F;
+    -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    border: solid lightgray;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -258,7 +328,6 @@ div {
     display: flex;
     margin: auto;
     border-radius: 1%;
-    
 }   
 .about-page__item {
     margin: auto;
@@ -353,4 +422,33 @@ table, th, td {
     h1 {
         font-size: 22px;
     }
+}
+.contact-page {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 24px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+    margin: 0 24px 0;
+    border: solid lightgrey;
+    -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    padding: 24px 32px;
+    border-radius: 12px;
+}
+.contact-page__item {
+    width: auto;
+    min-height: auto;
+    padding: 0px 24px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.contact-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }

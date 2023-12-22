@@ -208,6 +208,7 @@ div {
     max-width: 700px;
     margin: 0 auto;
     padding: 100px;
+    
 }
 .page-header {
     display: -webkit-box;
@@ -479,20 +480,20 @@ table, th, td {
 }
 @media all and (max-width:625px) {
     .profile {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
         width: auto;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 0px;
-                flex: 0 1 0;
-        padding: 75px;
-
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 1px;
+        margin: 0px; 
+        -webkit-box-pack: center; 
+            -ms-flex-pack: center; 
+                justify-content: center;
     }
     h1{
         text-align: center;
@@ -503,15 +504,13 @@ table, th, td {
     a{
         text-align: center;
     }
-    body{
-        line-height: 1;
-    }
     .profile__portrait{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
         text-align: center;
+        margin: 0px;
     }
 }
 @media all and (max-width:750px) {
@@ -530,5 +529,6 @@ table, th, td {
     }
     .navigation-list__item{
         padding: 1px;
+        font-size: 18px;
     }
 }

@@ -124,6 +124,7 @@ div {
     max-width: 700px;
     margin: 0 auto;
     padding: 100px;
+    
 }
 .page-header {
     display: flex;
@@ -300,13 +301,13 @@ table, th, td {
 }
 @media all and (max-width:625px) {
     .profile {
-        display: grid;
-        grid-template-columns: 1fr;
         width: auto;
         flex-direction: column;
-        flex: 0 1 0;
-        padding: 75px;
-
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1px;
+        margin: 0px; 
+        justify-content: center;
     }
     h1{
         text-align: center;
@@ -317,12 +318,10 @@ table, th, td {
     a{
         text-align: center;
     }
-    body{
-        line-height: 1;
-    }
     .profile__portrait{
         flex-direction: column;
         text-align: center;
+        margin: 0px;
     }
 }
 @media all and (max-width:750px) {
@@ -340,6 +339,7 @@ table, th, td {
         padding: 5px;
     }
     .navigation-list__item{
-        padding: 3px;
+        padding: 1px;
+        font-size: 18px;
     }
 }

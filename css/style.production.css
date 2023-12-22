@@ -452,3 +452,83 @@ table, th, td {
         -ms-flex-pack: center;
             justify-content: center;
 }
+@media all and (max-width:750px) {
+    .contact-page {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+@media all and (max-width:750px) {
+    .about-svg {
+        display: none;
+    }
+}
+@media all and (max-width:800px) {
+    .about-page {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: auto;
+    }
+    .about-page__item {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 0px;
+                flex: 0 1 0;
+    }
+}
+@media all and (max-width:625px) {
+    .profile {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        width: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 0px;
+                flex: 0 1 0;
+        padding: 75px;
+
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    a{
+        text-align: center;
+    }
+    body{
+        line-height: 1;
+    }
+    .profile__portrait{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+    }
+}
+@media all and (max-width:750px) {
+    .page-footer{
+        margin-top: 30px;
+    }
+}
+@media all and (max-width:600px) {
+    .page-footer{
+        margin-top: 10px;
+    }
+}
+@media all and (max-width:600px) {
+    .page-header{
+        padding: 5px;
+    }
+    .navigation-list__item{
+        padding: 3px;
+    }
+}

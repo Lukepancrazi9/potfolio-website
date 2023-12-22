@@ -284,3 +284,62 @@ table, th, td {
         grid-template-columns: 1fr;
     }
 }
+@media all and (max-width:750px) {
+    .about-svg {
+        display: none;
+    }
+}
+@media all and (max-width:800px) {
+    .about-page {
+        flex-direction: column;
+        width: auto;
+    }
+    .about-page__item {
+        flex: 0 1 0;
+    }
+}
+@media all and (max-width:625px) {
+    .profile {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: auto;
+        flex-direction: column;
+        flex: 0 1 0;
+        padding: 75px;
+
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    a{
+        text-align: center;
+    }
+    body{
+        line-height: 1;
+    }
+    .profile__portrait{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media all and (max-width:750px) {
+    .page-footer{
+        margin-top: 30px;
+    }
+}
+@media all and (max-width:600px) {
+    .page-footer{
+        margin-top: 10px;
+    }
+}
+@media all and (max-width:600px) {
+    .page-header{
+        padding: 5px;
+    }
+    .navigation-list__item{
+        padding: 3px;
+    }
+}

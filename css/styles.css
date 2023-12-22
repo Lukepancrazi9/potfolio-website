@@ -279,3 +279,8 @@ table, th, td {
     display: flex;
     justify-content: center;
 }
+@media all and (max-width:750px) {
+    .contact-page {
+        grid-template-columns: 1fr;
+    }
+}

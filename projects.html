@@ -1,91 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <head>
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloock&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <title>Luke Pancrazi's Projects</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="page-header">
-        <!--Change dimensions of logo image to fit-->
-        <img src="img/lukepanlogo.svg" width="80" alt="logo" class="page-header__item">
-        <nav role="menubar" class="page-header__item">
-                <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-
-                <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-            
-                <a href="projects.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Projects</a> 
-            
-                <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+      <!--Change dimensions of logo image to fit-->
+      <img
+        src="img/lukepanlogo.svg"
+        width="80"
+        alt="logo"
+        class="page-header__item"
+      />
+      <nav role="menubar" class="page-header__item">
+        <a href="index.html" role="menuitem" class="navigation-list__item"
+          >Home</a
+        >
+        <a href="about.html" role="menuitem" class="navigation-list__item"
+          >About Me</a
+        >
+        <a
+          href="projects.html"
+          role="menuitem"
+          class="navigation-list__item navigation-list__item--active"
+          >Projects</a
+        >
+        <a href="contact.html" role="menuitem" class="navigation-list__item"
+          >Contact</a
+        >
       </nav>
     </header>
 
     <main>
-        <h1 class="projects-header">My Projects</h1>
-        <div class="grid">
-            <div class="grid__item">
-                <h2>Mobile web app</h2>
-                <p>Within this project, I was resposible for the frontend. It's written in React.js.
-                Additionally, I've created the HTML and CSS templates
-                </p>
-                <a href="#" class="grid-button">See Project on Github</a>
-            </div>
-            <div class="grid__item">
-                <h2>Project #2</h2>
-                <p>Within this project, I was resposible for the frontend. It's written in React.js.
-                Additionally, I've created the HTML and CSS templates
-                </p>
-                <a href="#" class="grid-button">See Project on Github</a>
-            </div>
-            <div class="grid__item">
-                <h2>Project #3</h2>
-                <p>Within this project, I was resposible for the frontend. It's written in React.js.
-                Additionally, I've created the HTML and CSS templates
-                </p>
-                <a href="#" class="grid-button">See Project on Github</a>
-            </div>
-            <div class="grid__item">
-                <h2>Project #4</h2>
-                <p>Within this project, I was resposible for the frontend. It's written in React.js.
-                Additionally, I've created the HTML and CSS templates
-                </p>
-                <a href="#" class="grid-button">See Project on Github</a>
-            </div>
-            <div class="grid__item">
-                <h2>Project #5</h2>
-                <p>Within this project, I was resposible for the frontend. It's written in React.js.
-                Additionally, I've created the HTML and CSS templates
-                </p>
-                <a href="#" class="grid-button">See Project on Github</a>
-            </div>
-            <div class="grid__item">
-                <h2>Project #6</h2>
-                <p>Within this project, I was resposible for the frontend. It's written in React.js.
-                Additionally, I've created the HTML and CSS templates
-                </p>
-                <a href="#" class="grid-button">See Project on Github</a>
-            </div>
+      <h1 class="projects-header">My Projects</h1>
+      <div class="grid">
+        <div class="grid__item">
+          <img
+            src="img/To-Do-List.png"
+            alt="To-Do-List"
+            class="project-image"
+          />
+          <h2>To Do List App</h2>
+          <p>
+            I created a To Do List using jQuery that allows the user to add
+            items, cross out items, delete items, and reorder items.
+          </p>
+          <a
+            href="https://github.com/Lukepancrazi9/jQuery-to-do-list-app"
+            class="button github-button"
+            target="_blank"
+            >View on GitHub</a
+          >
+          <a
+            href="https://lukepancrazi9.github.io/jQuery-to-do-list-app/"
+            class="button live-button"
+            target="_blank"
+            >Live Link</a
+          >
         </div>
+        <div class="grid__item">
+          <img
+            src="img/Pokemon-Index.png"
+            alt="Pokemon-Index"
+            class="project-image"
+          />
+          <h2>Pokemon Index</h2>
+          <p>
+            A web application using HTML, CSS, and JavaScript that loads data
+            from an external API and lets users view various Pokémon and their
+            details.
+          </p>
+          <a
+            href="https://github.com/Lukepancrazi9/simple-js-app"
+            class="button github-button"
+            target="_blank"
+            >View on GitHub</a
+          >
+          <a
+            href="https://lukepancrazi9.github.io/simple-js-app/"
+            class="button live-button"
+            target="_blank"
+            >Live Link</a
+          >
+        </div>
+        <div class="grid__item">
+          <img
+            src="img/Crazi-Movies-API.png"
+            alt="Crazi-Movies-API"
+            class="project-image"
+          />
+          <h2>Crazi Movies API</h2>
+          <p>
+            I developed the backend and API for the Crazi Movies Application
+            with the endpoints being tested in PostMan.
+          </p>
+          <a
+            href="https://github.com/Lukepancrazi9/movie_api"
+            class="button github-button"
+            target="_blank"
+            >View on GitHub</a
+          >
+          <a
+            href="https://crazi-movies-5042ca35c2c0.herokuapp.com/documentation.html"
+            class="button live-button"
+            target="_blank"
+            >Live Link</a
+          >
+        </div>
+        <div class="grid__item">
+          <img
+            src="img/Crazi-Movies-Client.png"
+            alt="Crazi-Movies-Client"
+            class="project-image"
+          />
+          <h2>Crazi Movies</h2>
+          <p>
+            Crazi Movies is a frontend client-side development application for a
+            movie database based on its server-side code.
+          </p>
+          <a
+            href="https://github.com/Lukepancrazi9/craziMovies-client"
+            class="button github-button"
+            target="_blank"
+            >View on GitHub</a
+          >
+          <a
+            href="https://crazimovies.netlify.app"
+            class="button live-button"
+            target="_blank"
+            >Live Link</a
+          >
+        </div>
+        <div class="grid__item">
+          <img src="img/Meet-App.png" alt="Meet-App" class="project-image" />
+          <h2>Meet App</h2>
+          <p>
+            Meet App is a serverless, progressive web application built using
+            React with a test-driven development technique. This application
+            also uses the Google Calender API to fetch upcoming events.
+          </p>
+          <a
+            href="https://github.com/Lukepancrazi9/meet-app"
+            class="button github-button"
+            target="_blank"
+            >View on GitHub</a
+          >
+          <a
+            href="https://lukepancrazi9.github.io/meet-app/"
+            class="button live-button"
+            target="_blank"
+            >Live Link</a
+          >
+        </div>
+        <div class="grid__item">
+          <img
+            src="img/lukepanlogo.svg"
+            alt="Future-Project"
+            class="project-image"
+          />
+          <h2>Upcoming Project</h2>
+          <p>
+            A new future project still in development! Please stand by for
+            further updates.
+          </p>
+          <a
+            href="https://github.com/Lukepancrazi9"
+            class="button github-button"
+            target="_blank"
+            >View on GitHub</a
+          >
+          <a
+            href="https://github.com/Lukepancrazi9"
+            class="button live-button"
+            target="_blank"
+            >Live Link</a
+          >
+        </div>
+        <div class="grid__item">
+          <img
+            src="img/lukepanlogo.svg"
+            alt="Future-Project"
+            class="project-image"
+          />
+          <h2>Upcoming Project</h2>
+          <p>
+            A new future project still in development! Please stand by for
+            further updates.
+          </p>
+          <a
+            href="https://github.com/Lukepancrazi9"
+            class="button github-button"
+            target="_blank"
+            >View on GitHub</a
+          >
+          <a
+            href="https://github.com/Lukepancrazi9"
+            class="button live-button"
+            target="_blank"
+            >Live Link</a
+          >
+        </div>
+        <div class="grid__item">
+          <img
+            src="img/lukepanlogo.svg"
+            alt="Future-Project"
+            class="project-image"
+          />
+          <h2>Upcoming Project</h2>
+          <p>
+            A new future project still in development! Please stand by for
+            further updates.
+          </p>
+          <a
+            href="https://github.com/Lukepancrazi9"
+            class="button github-button"
+            target="_blank"
+            >View on GitHub</a
+          >
+          <a
+            href="https://github.com/Lukepancrazi9"
+            class="button live-button"
+            target="_blank"
+            >Live Link</a
+          >
+        </div>
+        <div class="grid__item">
+          <img
+            src="img/lukepanlogo.svg"
+            alt="Future-Project"
+            class="project-image"
+          />
+          <h2>Upcoming Project</h2>
+          <p>
+            A new future project still in development! Please stand by for
+            further updates.
+          </p>
+          <a
+            href="https://github.com/Lukepancrazi9"
+            class="button github-button"
+            target="_blank"
+            >View on GitHub</a
+          >
+          <a
+            href="https://github.com/Lukepancrazi9"
+            class="button live-button"
+            target="_blank"
+            >Live Link</a
+          >
+        </div>
+        <div class="grid__item">
+          <img
+            src="img/lukepanlogo.svg"
+            alt="Future-Project"
+            class="project-image"
+          />
+          <h2>Upcoming Project</h2>
+          <p>
+            A new future project still in development! Please stand by for
+            further updates.
+          </p>
+          <a
+            href="https://github.com/Lukepancrazi9"
+            class="button github-button"
+            target="_blank"
+            >View on GitHub</a
+          >
+          <a
+            href="https://github.com/Lukepancrazi9"
+            class="button live-button"
+            target="_blank"
+            >Live Link</a
+          >
+        </div>
+      </div>
     </main>
-     
-    <footer class="page-footer">
-        <div class="social-media">
-            <p>Find me on</p>
-            <a href="https://github.com/Lukepancrazi9" target="_blank">
-              <img src="img/8666193_github_icon.svg" alt="Github icon" class="footer-icon">
-            </a>
-            <a href="https://twitter.com/lukepancrazi9" target="_blank">
-              <img src="img/11053970_x_logo_twitter_new_brand_icon.svg" alt="X icon" class="footer-icon" >
-            </a>
-          </div>
+
+    <footer class="projects-footer">
+      <div class="social-media">
+        <p>Find me on</p>
+        <a href="https://github.com/Lukepancrazi9" target="_blank">
+          <img
+            src="img/8666193_github_icon.svg"
+            alt="Github icon"
+            class="footer-icon"
+          />
+        </a>
+        <a href="https://twitter.com/lukepancrazi9" target="_blank">
+          <img
+            src="img/11053970_x_logo_twitter_new_brand_icon.svg"
+            alt="X icon"
+            class="footer-icon"
+          />
+        </a>
+      </div>
     </footer>
 
     <script src="js/tota11y.min.js"></script>
-</body>
+  </body>
 </html>
